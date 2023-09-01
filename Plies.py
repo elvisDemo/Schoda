@@ -10,5 +10,6 @@ streamlit.text('🐔Hard-Boiled Free-Range Egg')
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
-Showthis = streamlit.multiselect("Pick some fruits:",list(my_fruit_list),['Avocado','Strawberries'])   
-streamlit.dataframe(Showthis)
+Showthis = streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])   
+fruitsShow = my_fruit_list.loc(Showthis)
+streamlit.dataframe(fruitsShow)
