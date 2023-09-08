@@ -1,5 +1,6 @@
 import streamlit
-import pandasimport snowflake.connector
+import pandas
+import snowflake.connector
 
 streamlit.title('Strong Tower')
 streamlit.header('🍞Breakfast Menu')
