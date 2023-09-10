@@ -25,3 +25,8 @@ streamlit.text(fruityvice_response)
 streamlit.dataframe(my_fruit_list)
 streamlit.header('Fruitvice Fruit Advice!')
 streamlit.text(fruityvice_responser.json())
+
+# write your own comment -what does the next line do? 
+fruityvice_normalized = pandas.json_normalize(fruityvice_responser.json())
+# write your own comment - what does this do?
+streamlit.dataframe(fruityvice_normalized)
