@@ -22,4 +22,7 @@ streamlit.text(fruityvice_response)
 # my_fruit_list = my_fruit_list.set_index('Fruit')
 # Showthis = streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])   
 # fruitsShow = my_fruit_list.loc(Showthis)
-streamlit.dataframe(fruityvice_response)
+
+streamlit.dataframe(my_fruit_list)
+
+streamlit.text(fruityvice_response.JSON())
