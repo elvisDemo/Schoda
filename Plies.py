@@ -24,5 +24,5 @@ streamlit.text(fruityvice_response)
 # fruitsShow = my_fruit_list.loc(Showthis)
 
 streamlit.dataframe(my_fruit_list)
-
-streamlit.text(fruityvice_response.JSON())
+streamlite.header('Fruitvice Fruit Advice!')
+streamlit.text(fruityvice_response.json())
