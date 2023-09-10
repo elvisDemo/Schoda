@@ -2,7 +2,6 @@ import streamlit
 import pandas
 #import snowflake.connector
 import requests
-import requests
 
 
 streamlit.title('Strong Tower')
@@ -17,7 +16,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 streamlit.text(fruityvice_response)
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_responser = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
 # my_fruit_list = my_fruit_list.set_index('Fruit')
 # Showthis = streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])   
@@ -25,4 +24,4 @@ streamlit.text(fruityvice_response)
 
 streamlit.dataframe(my_fruit_list)
 streamlite.header('Fruitvice Fruit Advice!')
-streamlit.text(fruityvice_response.json())
+streamlit.text(fruityvice_responser.json())
