@@ -1,8 +1,9 @@
 import streamlit
 import pandas
-import snowflake.connector
+# import snowflake.connector
 import requests
-
+import subprocess
+subprocess.Popen(["pip", "install", "--upgrade", "urllib3"])
 
 streamlit.title('Strong Tower')
 streamlit.header('🍞Breakfast Menu')
